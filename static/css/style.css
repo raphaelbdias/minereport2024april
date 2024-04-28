@@ -1,0 +1,140 @@
+/* Define the @font-face rule */
+@font-face {
+    font-family: 'Tenorite';
+    src: url('static/fonts/Tenorite.ttf') format('truetype'); /* Replace '/path/to/tenorite.ttf' with the actual path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the Tenorite font for the body */
+body {
+    font-family: 'Tenorite'; /* Use 'Tenorite' font as the fallback if it's not available */
+    background-color: black; /* Set the background color to black */
+    color: white; /* Set the text color to white for better contrast */
+    padding-left: 300px; /* Adjust as needed */
+    padding-right: 300px; /* Adjust as needed */
+    font-size: x-large;
+}
+
+/* Additional styles for headings */
+h1 {
+    color: #fff; /* Example: Set the color of h1 elements to yellow */
+}
+
+/* CSS styles for .report and .author */
+.report,
+.author,
+.download,
+.contact {
+    width: 100%; /* Take up the full width of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text horizontally */
+    page-break-before: always; /* Add page break before each div */
+}
+
+/* Additional styles for headings */
+h2 {
+    margin-bottom: 20px; /* Add margin below headings */
+}
+
+/* Style for report sections */
+.section {
+    width: 100%; /* Take up the full width of the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: left; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: left; /* Center text horizontally */
+    padding: 50px; /* Adjust padding as needed */
+    page-break-before: always;
+}
+
+/* Additional styles for headings */
+.section h2 {
+    margin-bottom: 20px; /* Add margin below headings */
+}
+
+/* Container for text and image */
+.content {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between text and image */
+}
+/* Style for text */
+.texts {
+    width: 100%; /* Take up 50% of the container width */
+    padding: 10px; /* Add padding for spacing */
+}
+/* Style for text */
+.text {
+    width: 50%; /* Take up 50% of the container width */
+    padding: 10px; /* Add padding for spacing */
+}
+
+/* Style for image */
+.image {
+    width: 50%; /* Take up 50% of the container width */
+    height: 4; /* Set a fixed height for the image container */
+    /* text-align: center; Center image horizontally */
+    overflow: hidden; /* Hide any overflow content (if image exceeds container size) */
+}
+
+/* Style for video */
+.video {
+    width: 50%; /* Take up 50% of the container width */
+    height: 300px; /* Set a fixed height for the video container */
+    text-align: center; /* Center video horizontally */
+    overflow: hidden; /* Hide any overflow content (if video exceeds container size) */
+}
+
+/* Additional styles for the navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #000; /* Set background color */
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    float: left; /* Float list items to create horizontal layout */
+}
+
+.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav li a:hover {
+    background-color: #333; /* Change background color on hover */
+    color: #fff;
+}
+
+hr {
+    width: 100%; /* Set the width to 100% to span the entire width of the container */
+    height: 1px; /* Set the height of the line */
+    background-color: white; /* Set the color of the line */
+    margin: 20px 0; /* Adjust margin as needed */
+    border: none; /* Remove default border */
+}
+
+/* Hide sections by default */
+.section {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+
+/* Show sections when visible in viewport */
+.section.visible {
+    opacity: 1;
+}

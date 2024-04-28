@@ -1,14 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flask App</title>
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- Replace 'path/to/styles.css' with the actual path to your CSS file -->
+    <link rel="stylesheet" href="static/css/style.css"> <!-- Replace 'path/to/styles.css' with the actual path to your CSS file -->
 </head>
 <body>
-    <h1>Welcome to Flask App</h1>
-    <p>This is a Flask application using the Tenorite font.</p>
+    <nav class="topnav">
+        <ul>
+            <li><a href="#report">Report</a></li>
+            <li><a href="#author">Authors</a></li>
+            <li><a href="#download">Download Report</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div>
+        <div class="report" id="report">
+            <!-- SECTION ONE -->
+            <section class="section">
+                <div class="content">
+                    <div class="text">
+                        <h2>Powering the Future: </h2>
+                        <h2 style="font-weight:normal">Canada's EV Revolution and Mining Software Needs</h2>
+                        <p>
+                            Canada leads the global transition to electric vehicles and sustainable mining through innovation and commitment to environmental stewardship. 
+                            Ontario aims to become an EV manufacturing hub by 2030, driving economic growth. 
+                            With abundant critical minerals and a growing battery manufacturing ecosystem, Canada is pivotal in the global EV supply chain. 
+                            <br>
+                            <br>Advanced software enhances mining safety and efficiency, but talent shortages and infrastructure challenges persist. 
+                            Collaborative efforts prioritize inclusivity, shaping a future where clean transportation and responsible mining converge for a brighter tomorrow.
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img src="static/images/main page.gif" alt="Image Description">
+                    </div>
+                </div>
+            </section>
+            <hr> <!-- Horizontal line after the first div -->
+
+
+
+            <!-- SECTION 2 -->        
+            <section class="section">
+                <div class="content">
+                    <div class="texts">
+                        <h2 style="font-weight:normal">
+                            Global mining struggles with talent shortages and infrastructure limitations, hindering innovation adoption.</h2>
+                        <br>
+                        <p>This is the content of section 2.</p>
+                    </div>
+                </div>
+            </section>
+            <hr> <!-- Horizontal line after the first div -->
+
+
+            <!-- SECTION 3 -->
+            <section class="section">
+                <div class="content">
+                    <div class="texts">
+                        <h2>Section 2</h2>
+                        <br>
+                        <p>This is the content of section 2.</p>
+                    </div>
+                </div>
+            </section>
+            <hr> <!-- Horizontal line after the first div -->
+
+            <!-- Add more sections as needed -->
+        </div>
+    </div>
+
+    <div>
+        <div class="author" id="author">
+            <div class="content">
+                <div class="texts">
+                    <h2>Author</h2>
+                    <br>
+                    <p>This is the content of section 2.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr> <!-- Horizontal line after the first div -->
+
+    </div>
+
+    <div class="download" id="download">
+        <div class="content">
+            <div class="texts">
+                <h2>Download Report</h2>
+                <br>
+                <p>This is the content of section 2.</p>
+            </div>
+        </div>
+        <hr> <!-- Horizontal line after the first div -->
+
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="content">
+            <div class="texts">
+                <h2>Contact</h2>
+                <br>
+                <p>This is the content of section 2.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/scripts/main.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
