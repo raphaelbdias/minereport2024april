@@ -74,6 +74,28 @@ h2 {
     padding: 10px; /* Add padding for spacing */
 }
 
+.container {
+    width: 100%; /* Set width of the container */
+    height: 500px; /* Set height of the container */
+    overflow: hidden; /* Hide any overflow content */
+}
+
+.container img {
+    max-width: 100%; /* Set maximum width of the image to 100% of the container width */
+    max-height: 100%; /* Set maximum height of the image to 100% of the container height */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: auto; /* Center the image horizontally */
+}
+
+
+/* Style for image */
+.images {
+    width: 100%; /* Take up 50% of the container width */
+    height: 2; /* Set a fixed height for the image container */
+    /* text-align: center; Center image horizontally */
+    overflow: hidden; /* Hide any overflow content (if image exceeds container size) */
+    display: block; 
+}
 /* Style for image */
 .image {
     width: 50%; /* Take up 50% of the container width */
@@ -138,3 +160,26 @@ hr {
 .section.visible {
     opacity: 1;
 }
+
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .contents {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
