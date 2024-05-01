@@ -48,7 +48,7 @@ h2 {
     justify-content: left; /* Center content vertically */
     align-items: center; /* Center content horizontally */
     text-align: left; /* Center text horizontally */
-    padding: 50px; /* Adjust padding as needed */
+    padding: 20px; /* Adjust padding as needed */
     page-break-before: always;
 }
 
@@ -75,9 +75,10 @@ h2 {
 }
 
 .container {
-    width: 100%; /* Set width of the container */
-    height:510px; /* Set height of the container */
+    width: 50%; /* Set width of the container */
+    height:100%; /* Set height of the container */
     overflow: hidden; /* Hide any overflow content */
+    padding-left: 2px;
 }
 
 .container img {
@@ -90,16 +91,15 @@ h2 {
 
 /* Style for image */
 .images {
-    width: 100%; /* Take up 50% of the container width */
-    height: 2; /* Set a fixed height for the image container */
+    width: 50%; /* Take up 50% of the container width */
+    height: 50%; /* Set a fixed height for the image container */
     /* text-align: center; Center image horizontally */
     overflow: hidden; /* Hide any overflow content (if image exceeds container size) */
-    display: block; 
 }
 /* Style for image */
 .image {
     width: 50%; /* Take up 50% of the container width */
-    height: 4; /* Set a fixed height for the image container */
+    height: 100%; /* Set a fixed height for the image container */
     /* text-align: center; Center image horizontally */
     overflow: hidden; /* Hide any overflow content (if image exceeds container size) */
 }
@@ -161,6 +161,7 @@ hr {
     opacity: 1;
 }
 
+/* Style for collapsible button */
 .collapsible {
     background-color: #777;
     color: white;
@@ -170,11 +171,13 @@ hr {
     border: none;
     text-align: left;
     outline: none;
-  }
-  
-  .active, .collapsible:hover {
+}
+
+/* Active state of the collapsible button */
+.active, .collapsible:hover {
     background-color: #555;
-  }
+}
+
   
   .contents {
     padding: 0 18px;
@@ -183,3 +186,20 @@ hr {
     transition: max-height 0.2s ease-out;
   }
   
+  .panel {
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Padding inside the panel */
+    margin-bottom: 20px; /* Margin to create space between panels */
+}
+
+.panel-header {
+    background-color: #f0f0f0; /* Background color for the header */
+    padding: 10px; /* Padding inside the header */
+    border-bottom: 1px solid #ccc; /* Border bottom for header */
+    border-radius: 5px 5px 0 0; /* Rounded corners for top */
+}
+
+.panel-body {
+    padding: 10px; /* Padding inside the body */
+}
